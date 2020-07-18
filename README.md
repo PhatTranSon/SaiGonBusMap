@@ -3,13 +3,13 @@ A bus map, schedules and routes for bus goers in Ho Chi Minh City
 
 ## Screenshots:
 
-Home page: 
+Home page:<br/>
 ![Bus Map Home page](https://original-bucket-2012.s3-ap-southeast-1.amazonaws.com/Home+Page.png)
 
-View bus stop info:
+View bus stop info:<br/>
 ![Bus Stop Details](https://original-bucket-2012.s3-ap-southeast-1.amazonaws.com/Bus+Stop+Details.png)
 
-View route info:
+View route info:<br/>
 ![Bus Route Detail](https://original-bucket-2012.s3-ap-southeast-1.amazonaws.com/Route+Details+-+Statistics.png)
 
 ## Description
