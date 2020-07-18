@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class TrafficAPI {
     companion object {
         private const val BASE_URL = "https://maps.googleapis.com"
-        private const val API_KEY = "AIzaSyDj12C6oijJJUKZplwcRzpO7BkTqK8TYK8"
+        private const val API_KEY = "YOUR_KEY_HERE"
     }
 
     private val trafficService : TrafficService
