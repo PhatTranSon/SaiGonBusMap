@@ -3,10 +3,17 @@ A bus map, schedules and routes for bus goers in Ho Chi Minh City
 
 ## Screenshots:
 
-Home page: ![Bus Map Home page](https://original-bucket-2012.s3-ap-southeast-1.amazonaws.com/Home+Page.png)
+Home page: 
+![Bus Map Home page](https://original-bucket-2012.s3-ap-southeast-1.amazonaws.com/Home+Page.png)
+
+View bus stop info:
+![Bus Stop Details](https://original-bucket-2012.s3-ap-southeast-1.amazonaws.com/Bus+Stop+Details.png)
+
+View route info:
+![Bus Route Detail](https://original-bucket-2012.s3-ap-southeast-1.amazonaws.com/Route+Details+-+Statistics.png)
 
 ## Description
-A crude project made on my spare time to display information on Ho Chi Minh's public bus network. Please note that it is not very clean as it is my first big android application, also no testing is included.
+A crude project made on my spare time to display information on Ho Chi Minh's public bus network. Please note that it is not very clean (at all :)) as it is my first big android application, also no testing is included.
 
 ## Technologies used
 * Android Jetpack
