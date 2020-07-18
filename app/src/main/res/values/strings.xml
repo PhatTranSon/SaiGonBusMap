@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BusMap</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_menu_value">Map</string>
+    <string name="list_menu_value">Locations</string>
+    <string name="home_menu_value">Home</string>
+
+    <!-- API Keys (change to your version) -->
+    <string name="map_api_key">AIzaSyDj12C6oijJJUKZplwcRzpO7BkTqK8TYK8</string>
+
+    <!--View-->
+    <string name="route_text">Upcoming routes</string>
+    <string name="details_name_placeholder">%1$s (%2$s)</string>
+    <string name="details_address_placeholder">%1$s %2$s, %3$s</string>
+    <string name="route_info_statistics">Statistics</string>
+    <string name="route_info_bounds">Routes</string>
+    <string name="route_info_additional">Additional</string>
+    <string name="distance_text">Distance:</string>
+    <string name="waiting_time_text">Waiting time:</string>
+    <string name="trip_time_text">Trip time:</string>
+    <string name="operation_time_text">Operation time:</string>
+    <string name="seat_text">Seats:</string>
+    <string name="inbound_text">In Bound</string>
+    <string name="outbound_text">Out Bound</string>
+    <string name="type_text">Type:</string>
+    <string name="org_text">Organization</string>
+    <string name="find_route_text">Find Route</string>
+    <string name="finder_find_text">Find</string>
+    <string name="meter_text">meters</string>
+    <string name="error_text">Something went wrong</string>
+    <string name="home_title">Sai Gon Bus</string>
+    <string name="browse_text">Browse</string>
+    <string name="browse_desc_text">Get all the information on the bus stops, routes and their schedules</string>
+    <string name="navigate_text">Navigate</string>
+    <string name="navigate_desc_text">Find most efficient and less expensive rotes to your destination</string>
+    <string name="personalize_text">Personalize</string>
+    <string name="personalize_desc_text">Save bus stops for easy retrieval</string>
+</resources>

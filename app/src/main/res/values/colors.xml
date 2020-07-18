@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="title_color">#8A7EF8</color>
+    <color name="small_title_text">#D896FF</color>
+    <color name="btn_background">#9570DD</color>
+    <color name="btn_focused">#944dd3</color>
+    <color name="btn_pressed">#733fd7</color>
+    <color name="path_gray">#03DAC5</color>
+    <color name="path_purple">#8A7EF8</color>
+    <color name="home_upper">#DEFCF9</color>
+    <color name="home_lower">#CCA8E9</color>
+</resources>

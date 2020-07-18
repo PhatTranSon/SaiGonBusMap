@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/menu_home">
+
+    <fragment
+        android:id="@+id/menu_home"
+        android:name="com.example.busmap.view.home.HomeFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_menu_home_to_menu_map"
+            app:destination="@id/menu_map"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_menu_home_to_menu_list"
+            app:destination="@id/menu_list"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_menu_home_to_menu_finder_map"
+            app:destination="@id/menu_finder_map"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/menu_list"
+        android:name="com.example.busmap.view.saved.SavedFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_menu_list_to_bus_stop_details"
+            app:destination="@id/bus_stop_details"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument android:name="stop" app:argType="com.example.busmap.core.domain.models.BusStop"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/menu_map"
+        android:name="com.example.busmap.view.stops.MapFragment"
+        android:label="MapFragment" >
+        <action
+            android:id="@+id/action_menu_map_to_bus_stop_details"
+            app:destination="@id/bus_stop_details"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="stop"
+                app:argType="com.example.busmap.core.domain.models.BusStop" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/bus_stop_details"
+        android:name="com.example.busmap.view.stops.BusStopDetailsFragment"
+        android:label="fragment_bus_stop_details"
+        tools:layout="@layout/fragment_bus_stop_details" >
+        <action
+            android:id="@+id/action_bus_stop_details_to_routeInfoFragment"
+            app:destination="@id/bus_route_info"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument android:name="routeId" app:argType="string"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/bus_route_info"
+        android:name="com.example.busmap.view.routes.RouteInfoFragment"
+        android:label="fragment_route_info"
+        tools:layout="@layout/fragment_route_info" />
+    <fragment
+        android:id="@+id/menu_finder_map"
+        android:name="com.example.busmap.view.navigation.NavigationMapFragment"
+        android:label="FinderMapFragment" >
+        <action
+            android:id="@+id/action_menu_finder_map_to_navigationFragment"
+            app:destination="@id/navigation_list"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument app:argType="float" android:name="startLat"/>
+            <argument app:argType="float" android:name="startLng"/>
+            <argument app:argType="float" android:name="endLat"/>
+            <argument app:argType="float" android:name="endLng"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.example.busmap.view.navigation.NavigationListFragment"
+        android:label="fragment_navigation"
+        tools:layout="@layout/fragment_navigation" >
+        <action
+            android:id="@+id/action_navigation_list_to_direction_map"
+            app:destination="@id/direction_map"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument app:argType="com.example.busmap.core.domain.models.BusNavigation"
+                android:name="navigation"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/direction_map"
+        android:name="com.example.busmap.view.navigation.DirectionMapFragment"
+        android:label="DirectionMapFragment" />
+</navigation>

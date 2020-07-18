@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="@string/home_menu_value" />
+    <item
+        android:id="@+id/menu_map"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="@string/map_menu_value" />
+    <item
+        android:id="@+id/menu_list"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:title="@string/list_menu_value" />
+    <item
+        android:id="@+id/menu_finder_map"
+        android:icon="@drawable/ic_navigation"
+        android:title="@string/find_route_text" />
+</menu>

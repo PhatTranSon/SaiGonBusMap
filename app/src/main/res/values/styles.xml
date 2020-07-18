@@ -1,0 +1,43 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="details_text">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="title_text">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="small_details_text" parent="AppTheme">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="smalll_details_text">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+
+    <style name="small_details_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:tint">@color/title_color</item>
+    </style>
+
+    <style name="cutom_button">
+        <item name="android:background">@drawable/custom_button_background</item>
+        <item name="android:textColor">@color/ic_bus_background</item>
+    </style>
+
+</resources>
