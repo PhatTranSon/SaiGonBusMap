@@ -1,16 +1,20 @@
 # SaiGonBusMap
 A bus map, schedules and routes for bus goers in Ho Chi Minh City
 
-# Description
+## Screenshots:
+
+Home page: ![Bus Map Home page](https://original-bucket-2012.s3-ap-southeast-1.amazonaws.com/Home+Page.png)
+
+## Description
 A crude project made on my spare time to display information on Ho Chi Minh's public bus network. Please note that it is not very clean as it is my first big android application, also no testing is included.
 
-# Technologies used
+## Technologies used
 * Android Jetpack
 * Google Map
 * Retrofit2
 * Room
 
-# Api Used
+## Api Used
 The API used in this project is provided by Ho Chi Minh's official bus organization. It is completely free and requires no API key but is only useful within HCM city
 * Get route using bounding coordinates (south west coords - north east coord): http://apicms.ebms.vn/businfo/getstopsinbounds/south west lng/south west lat/north east lng/north east lat (lat and lng are latitude and longitude coordinates)
 * Predict bus schedule by bus stop id: http://apicms.ebms.vn/prediction/predictbystopid/stop_id (it is currently not working)
