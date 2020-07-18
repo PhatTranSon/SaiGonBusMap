@@ -7,7 +7,7 @@
     <string name="home_menu_value">Home</string>
 
     <!-- API Keys (change to your version) -->
-    <string name="map_api_key">AIzaSyDj12C6oijJJUKZplwcRzpO7BkTqK8TYK8</string>
+    <string name="map_api_key">YOUR_KEY_HERE</string>
 
     <!--View-->
     <string name="route_text">Upcoming routes</string>
